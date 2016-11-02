@@ -1,0 +1,10 @@
+/* font-family: "RuslanDisplayRegular"; */
+@font-face {
+    font-family: "RuslanDisplayRegular";
+    src: url("../fonts/RuslanDisplayRegular/RuslanDisplayRegular.eot");
+    src: url("../fonts/RuslanDisplayRegular/RuslanDisplayRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RuslanDisplayRegular/RuslanDisplayRegular.woff") format("woff"),
+    url("../fonts/RuslanDisplayRegular/RuslanDisplayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
