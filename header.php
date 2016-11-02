@@ -7,8 +7,8 @@
     <!-- <meta name="keywords" content="создание сайтов, веб-разработчик, разработка сайтов, заказать сайт, landing page" /> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="<?php echo get_template_directory_uri();?>/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/favicon.ico" type="image/x-icon" />
 	
 	<!-- <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
@@ -24,7 +24,6 @@
 	<script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
 </head>
 <body>
-<!--  -->
 
 <div class="container">
 <header>
@@ -35,7 +34,8 @@
 		<div class="col-md-8  col-sm-8  reset_pad_lr">
 			<!-- <h1>Валенки ручной работы</h1> -->
 			<h1><?php echo get_option('blogname'); ?></h1>
-			<p>интернет-магазин с доставкой по всей России</p>
+			<!-- <p>интернет-магазин с доставкой по всей России</p> -->
+			<p><?php echo get_option('blogdescription'); ?></p>
 		</div>
 		<div class="col-md-4 col-sm-4 phone-callback reset_pad_r">
 			<!-- <span>+ 7 (999) 999-99-99</span> -->

@@ -73,6 +73,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		 * @hooked woocommerce_template_loop_add_to_cart - 10
 		 */
 		// echo wc_price($product->get_price());
+				remove_action('woocommerce_after_shop_loop_item',"woocommerce_template_loop_add_to_cart");
+
 		do_action( 'woocommerce_after_shop_loop_item' );
 		?>
 	</li>
