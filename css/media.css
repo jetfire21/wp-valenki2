@@ -79,18 +79,21 @@
     .checkout input, .checkout select, .checkout textarea,
     .woocommerce .checkout .select2-container { width: 100% !important; }
     .checkout input[type="submit"]{ width: auto !important; }
-
+	
+	.widget_shopping_cart {width: 300px; }
 	.mini_cart_item{ clear: both; }
 	.mini_cart_item .wrap_img_title{ line-height: 40px; overflow: hidden;}
     .mini_cart_item a span{ float: left; }
     .mini_cart_item .mc_prod_name{    
 	     line-height: 13px;
-	    width: 75%;
+	    width: 73%;
 	    display: block;
 	    padding: 5% 0;
      }
     .minicart-content .quantity { clear: both; }
-    #call_me,#fast_buy{ width: 96% !important; /*height: 265px !important;*/ }
+    #call_me,#fast_buy{ width: 96% !important; display: block; }
+    #call_me {height: 250px !important;}
+    #fast_buy {height: 295px !important;}
     #call_me input,#fast_buy input{ width: 100% !important; }
     #call_me .popup-modal-dismiss, #fast_buy .popup-modal-dismiss{ font-size: 22px; }
 

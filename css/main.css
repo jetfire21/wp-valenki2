@@ -474,13 +474,11 @@ footer .separator {
   padding: 20px;
   margin: auto;
   position: absolute;
-  display: table;
+  height: 205px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  height: auto;
-  z-index: 9999999;
 }
 #call_me .input-row, #fast_buy .input-row {
   margin-bottom: 10px;
@@ -513,6 +511,7 @@ footer .separator {
 
 #fast_buy {
   width: 300px !important;
+  height: 255px;
 }
 #fast_buy .price {
   text-align: center;
