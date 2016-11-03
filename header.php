@@ -40,7 +40,7 @@
 		<div class="col-md-4 col-sm-4 phone-callback reset_pad_r">
 			<!-- <span>+ 7 (999) 999-99-99</span> -->
 			<span> <?php echo get_option('option_phone'); ?> </span>
-			<a href="#call_me" class="popup-modal button add_to_cart_button"><i class="demo-icon icon-phone">&#xe800;</i> Позвоните мне</a>	
+			<a href="#call_me" class="popup-modal button add_to_cart_button"><i class="demo-icon icon-phone">&#xe800;</i> Перезвоните мне</a>	
 		</div>
 	</div>
 	<div class="separator"></div>
@@ -48,16 +48,6 @@
 <?php if ( is_active_sidebar( 'header_right' ) ) : ?>
 	<?php dynamic_sidebar( 'header_right' ); ?>
 <?php endif; ?>
-	<div id="call_me" class="white-popup-block mfp-hide">
-		<h3>Позвоните мне</h3>
-		<form action="">
-			<div class="input-row"><label>Имя</label> <input type="text" name="name"></div>
-			<div class="clearfix"></div>
-			<div class="input-row"><label>Телефон </label><input type="text" name="phone"></div>
-			<div class="wrap_send_call_me"><input type="submit" class="button" id="send_call_me" value="Отправить"></div>
-		</form>
-		<a class="popup-modal-dismiss" href="#">x</a>
-	</div>
 </div>
 
 

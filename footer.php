@@ -7,6 +7,28 @@
 	</footer>
 </div>
 
+<div id="call_me" class="white-popup-block mfp-hide">
+	<h3>Перезвоните мне</h3>
+	<form action="">
+		<div class="input-row"><label>Имя</label> <input type="text" name="name"></div>
+		<div class="clearfix"></div>
+		<div class="input-row"><label>Телефон </label><input type="text" name="phone"></div>
+		<div class="wrap_send_call_me"><input type="submit" class="button" id="send_call_me" value="Отправить"></div>
+	</form>
+	<a class="popup-modal-dismiss" href="#">x</a>
+</div>
+
+<div id="fast_buy" class="white-popup-block mfp-hide">
+	<h3>Быстрая покупка</h3>
+	<form action="">
+		<div class="input-row"><label>Имя</label> <input type="text" name="name"></div>
+		<div class="clearfix"></div>
+		<div class="input-row"><label>Телефон </label><input type="text" name="phone"></div>
+		<div class="wrap_send_fast_buy"><input type="submit" class="button" id="send_fast_buy" value="Заказать"></div>
+	</form>
+	<a class="popup-modal-dismiss" href="#">x</a>
+</div>
+
  <?php wp_footer(); ?>
 
 <!--<script src="<?php echo get_template_directory_uri();?>/libs/jquery/jquery1.11.0.min.js"></script>--> 
@@ -22,9 +44,9 @@
 <script type='text/javascript'> 
 	
 $(document).ready(function(){		
-	if( $( window ).width() > 767 ) {
-    	 $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 250});
-	}
+	// if( $( window ).width() > 767 ) {
+ //    	 $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 250});
+	// }
 });
 
  </script>

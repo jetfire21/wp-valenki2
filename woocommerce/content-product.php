@@ -73,10 +73,22 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		 * @hooked woocommerce_template_loop_add_to_cart - 10
 		 */
 		// echo wc_price($product->get_price());
-				remove_action('woocommerce_after_shop_loop_item',"woocommerce_template_loop_add_to_cart");
+		remove_action('woocommerce_after_shop_loop_item',"woocommerce_template_loop_add_to_cart");
 
 		do_action( 'woocommerce_after_shop_loop_item' );
 		?>
+
+		<?php 
+			// $price = $product->get_price_html();
+			// $a = '<ins><span class="woocommerce-Price-amount amount">1.690&nbsp;<span class="woocommerce-Price-currencySymbol">р.</span></span></ins>';
+			// $pattern = '/<ins><span class="woocommerce-Price-amount amount">[0-9\.]+/i';
+			// preg_match($pattern, $price, $matches);
+			// print_r($matches);
+			$price_no_format = $product->get_price();
+		?>
+
+		<a id="show_fast_buy" rel="nofollow" href="#fast_buy" data-quantity="1" data-price="<?php echo $price_no_format;?>" data-title="<?php echo get_the_title();?>" class="popup-modal_buy button add_to_cart_button">Быстрая покупка</a>
+
 	</li>
 	<?php // if( $i%4 == 0 && !is_product() ):?>
 		<!-- <div class="clearfix"></div> -->

@@ -291,6 +291,8 @@ dl.variation * {
 }
 .variations select {
   padding: 3px;
+  background: #fff !important;
+  border: 0 !important;
 }
 
 .single_product .sp-content {
@@ -466,36 +468,47 @@ footer .separator {
   text-decoration: underline;
 }
 
-#call_me {
+#call_me, #fast_buy {
   width: 250px;
   background: #4696CD;
   padding: 20px;
   margin: auto;
   position: relative;
 }
-#call_me .input-row {
+#call_me .input-row, #fast_buy .input-row {
   margin-bottom: 10px;
 }
-#call_me h3 {
+#call_me h3, #fast_buy h3 {
   font-size: 28px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
 }
-#call_me label {
+#call_me label, #fast_buy label {
   width: 58px;
   float: left;
 }
-#call_me input[type="text"] {
+#call_me input[type="text"], #fast_buy input[type="text"] {
   padding: 3px 10px;
 }
-#call_me .popup-modal-dismiss {
+#call_me .popup-modal-dismiss, #fast_buy .popup-modal-dismiss {
   margin: 0;
   text-decoration: none !important;
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+#fast_buy {
+  width: 300px !important;
+}
+#fast_buy .price {
+  text-align: center;
+  font-size: 16px;
+}
+#fast_buy h3 {
+  margin-bottom: 10px;
 }
 
 .page-404 {
