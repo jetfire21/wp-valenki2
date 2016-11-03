@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/favicon.ico" type="image/x-icon" />
 	
 	<!-- <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet"> -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/fonts.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/fontello/css/fontello.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/bootstrap/css/bootstrap.min.css" />

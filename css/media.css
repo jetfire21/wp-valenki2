@@ -90,6 +90,9 @@
 	    padding: 5% 0;
      }
     .minicart-content .quantity { clear: both; }
+    #call_me,#fast_buy{ width: 96% !important; /*height: 265px !important;*/ }
+    #call_me input,#fast_buy input{ width: 100% !important; }
+    #call_me .popup-modal-dismiss, #fast_buy .popup-modal-dismiss{ font-size: 22px; }
 
 }
 

@@ -13,6 +13,7 @@
 		<div class="input-row"><label>Имя</label> <input type="text" name="name"></div>
 		<div class="clearfix"></div>
 		<div class="input-row"><label>Телефон </label><input type="text" name="phone"></div>
+		<div class="clearfix"></div>
 		<div class="wrap_send_call_me"><input type="submit" class="button" id="send_call_me" value="Отправить"></div>
 	</form>
 	<a class="popup-modal-dismiss" href="#">x</a>
@@ -24,6 +25,7 @@
 		<div class="input-row"><label>Имя</label> <input type="text" name="name"></div>
 		<div class="clearfix"></div>
 		<div class="input-row"><label>Телефон </label><input type="text" name="phone"></div>
+		<div class="clearfix"></div>
 		<div class="wrap_send_fast_buy"><input type="submit" class="button" id="send_fast_buy" value="Заказать"></div>
 	</form>
 	<a class="popup-modal-dismiss" href="#">x</a>
@@ -44,9 +46,9 @@
 <script type='text/javascript'> 
 	
 $(document).ready(function(){		
-	// if( $( window ).width() > 767 ) {
- //    	 $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 250});
-	// }
+	if( $( window ).width() > 767 ) {
+    	 $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 250});
+	}
 });
 
  </script>

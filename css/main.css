@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background: #4696CD;
-  font-family: "Neucha", cursive;
+  font-family: "NeuchaRegular";
   color: #fff;
   min-width: 320px;
 }
@@ -473,7 +473,14 @@ footer .separator {
   background: #4696CD;
   padding: 20px;
   margin: auto;
-  position: relative;
+  position: absolute;
+  display: table;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  z-index: 9999999;
 }
 #call_me .input-row, #fast_buy .input-row {
   margin-bottom: 10px;
@@ -484,6 +491,7 @@ footer .separator {
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
+  line-height: 25px;
 }
 #call_me label, #fast_buy label {
   width: 58px;
@@ -498,6 +506,9 @@ footer .separator {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+#call_me .button, #fast_buy .button {
+  display: block;
 }
 
 #fast_buy {

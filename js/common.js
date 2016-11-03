@@ -66,8 +66,8 @@ $(document).ready(function() {
 	      // console.log("fast_buy");
 
 	      var link_cont = this.currItem.el.context.outerHTML;
-	      console.log(typeof link_cont);
-	      console.log(link_cont);
+	      // console.log(typeof link_cont);
+	      // console.log(link_cont);
 
 	      // var str = '<a id="show_fast_buy" rel="nofollow" href="#fast_buy" data-quantity="1" data-product_id="92" data-title="Мужские тапочки ручной работы" class="popup-modal_buy button add_to_cart_button">Быстрая покупка</a>';
 	      var title = link_cont.match(/data-title="[^"]+/i);
@@ -75,7 +75,7 @@ $(document).ready(function() {
 	      title = title.match(/"[^"]+/i);
 	      title = title[0];
 	      title = title.substr(1);
-	      console.log(title);
+	      // console.log(title);
 
 	      var price = link_cont.match(/data-price="[^"]+/i);
   	      price = price[0];
@@ -128,11 +128,11 @@ $(document).ready(function() {
 	$('#send_fast_buy').click(function(e){
 		e.preventDefault();
 		var form_data = $('#fast_buy form').serialize();
-		console.log(form_data);
+		// console.log(form_data);
 		var title = $("#fast_buy h3").text();
 		var price = $("#fast_buy .price").text();
 		form_data = form_data+ "&title="+title + "&price="+price;
-		console.log(form_data);
+		// console.log(form_data);
 
 		 $.ajax({
 			  type: 'post',
@@ -141,6 +141,8 @@ $(document).ready(function() {
 			  success: function(data){
 			  	var data = JSON.parse(data);
 				if(data.res == 'success') { 
+					// console.log(typeof data.st);
+					// console.log(data.st);
 					alert("Ваше сообщение успешно отправлено!"); 
 					$("#fast_buy .woocommerce-error").remove();
 					$.magnificPopup.close();
