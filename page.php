@@ -20,6 +20,7 @@
 			 $feedback = $_SERVER['REQUEST_URI'];
 			 if( preg_match("/otzyvy/i", $feedback)): 
 			 ?>
+				<script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
 				<!--  обзор комментариев -->
 <!-- 				
 				<div id="vk_comments_browse"></div>

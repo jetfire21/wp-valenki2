@@ -69,9 +69,12 @@ $(document).ready(function() {
 	      // console.log(typeof link_cont);
 	      // console.log(link_cont);
 
+	      // регулярные выражения на javascript (пример)
 	      // var str = '<a id="show_fast_buy" rel="nofollow" href="#fast_buy" data-quantity="1" data-product_id="92" data-title="Мужские тапочки ручной работы" class="popup-modal_buy button add_to_cart_button">Быстрая покупка</a>';
+	      // находим data-title="Мужские тапочки ручной работы
 	      var title = link_cont.match(/data-title="[^"]+/i);
 	      title = title[0];
+	      // находим "Мужские тапочки ручной работы
 	      title = title.match(/"[^"]+/i);
 	      title = title[0];
 	      title = title.substr(1);

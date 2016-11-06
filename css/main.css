@@ -474,7 +474,7 @@ footer .separator {
   padding: 20px;
   margin: auto;
   position: absolute;
-  height: 205px;
+  height: 245px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -511,7 +511,7 @@ footer .separator {
 
 #fast_buy {
   width: 300px !important;
-  height: 255px;
+  height: 295px;
 }
 #fast_buy .price {
   text-align: center;

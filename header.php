@@ -21,7 +21,6 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/jScrollPane/jquery.jscrollpane.css"/>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/media.css" />
-	<script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
 </head>
 <body>
 

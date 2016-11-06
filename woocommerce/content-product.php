@@ -87,7 +87,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			$price_no_format = $product->get_price();
 		?>
 
-		<a id="show_fast_buy" rel="nofollow" href="#fast_buy" data-quantity="1" data-price="<?php echo $price_no_format;?>" data-title="<?php echo get_the_title();?>" class="popup-modal_buy button add_to_cart_button">Быстрая покупка</a>
+		<a id="show_fast_buy" rel="nofollow" href="#fast_buy" data-quantity="1" data-price="<?php echo $price_no_format;?>" data-title="<?php echo get_the_title();?>" class="popup-modal_buy button add_to_cart_button">Купить</a>
 
 	</li>
 	<?php // if( $i%4 == 0 && !is_product() ):?>

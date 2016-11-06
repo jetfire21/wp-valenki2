@@ -146,7 +146,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php else:  ?>
 			<p> no content</p>
 		<?php endif; ?>
-
+		
+		<script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
 		<!--  обзор комментариев -->
 		
 		<div id="vk_comments_browse"></div>
